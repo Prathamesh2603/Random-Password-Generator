@@ -35,6 +35,11 @@ body {
     padding-bottom: 7px;
 }
 .input-and-icon img {
-    width: 30px;
+    width: 36px;
     cursor: pointer;
+}
+.input-and-icon input {
+    border: none;
+    outline: none;
+    font-size: 24px;
 }
