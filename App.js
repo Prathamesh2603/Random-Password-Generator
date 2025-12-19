@@ -22,3 +22,12 @@ generateBtn.addEventListener("click", () => {
     }
     passwordBox.value = password;
 });
+
+copyBtn.addEventListener("click", () => {
+    navigator.clipboard.writeText(passwordBox.value).then(() => {
+        alert(`Password Copied: ${passwordBox.value}`);
+    }).catch((err) => {
+        alert('Failed to copy password: ', err);
+    });
+    
+});
